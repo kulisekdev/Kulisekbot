@@ -1,12 +1,10 @@
 import json
-import os
 import discord
 from discord.ext import commands
 from discord import app_commands, FFmpegPCMAudio
 import dotenv
 from dotenv import load_dotenv
-import datetime
-from datetime import datetime
+import os
 load_dotenv()
 
 # intents
@@ -14,14 +12,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.guilds = True
 intents.members = True
-intents.integrations = True
-intents.invites = True
-intents.voice_states = True
-intents.presences = True
-intents.messages = True
-intents.reactions = True
-intents.typing = True
-intents.dm_messages = True
+
 
 # Bot things.. just dont forget those... luke.. dont!
 bot = commands.Bot(intents=intents,command_prefix="!")
